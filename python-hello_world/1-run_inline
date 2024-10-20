@@ -1,2 +1,2 @@
 #!/bin/bash
-ptyhon3 -c "$PYCODE"
+ptyhon3 -c $PYCODE
