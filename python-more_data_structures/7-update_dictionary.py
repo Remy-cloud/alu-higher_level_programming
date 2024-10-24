@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-def print_sorted_dictionary(a_dictionary):
-    if a_dictionary is None:
-        return
-    for key in sorted(a_dictionary):
-        print(f"{key}: {a_dictionary[key]}")
+def update_dictionary(a_dictionary, key, value):
+    a_dictionary.update({key: value})
+    return a_dictionary
