@@ -7,9 +7,10 @@
 class Square:
     """Represents a square with a private size attribute,
      including getter and setter."""
-    def __int__(self, size=0):
+    def __init__(self, size=0):
         self.size = size
         """Retrieves the size of the square"""
+
         @property
         def size(self):
             return self.__size
