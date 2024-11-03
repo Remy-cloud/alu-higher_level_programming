@@ -1,8 +1,12 @@
 #!/usr/bin/python3
+"""
+This module defines a Square class.
+"""
+
+
 class Square:
+    """
+    This class represents a square.
+    """
+
     pass
-# Test code
-if __name__ == "__main__":
-    mysquare = Square()
-    print(type(mysquare))
-    print(mysquare.__dict__)
