@@ -1,0 +1,1 @@
+readme file on new project on inheritance in python
