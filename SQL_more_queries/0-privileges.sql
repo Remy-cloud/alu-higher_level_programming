@@ -1,19 +1,4 @@
--- Script to list all privileges for users 'user_0d_1' and 'user_0d_2' on localhost
-SELECT 
-    GRANTEE, 
-    PRIVILEGE_TYPE
-FROM 
-    information_schema.user_privileges
-WHERE 
-    GRANTEE = "'user_0d_1'@'localhost'";
-
--- Query privileges for user_0d_2
-SELECT 
-    GRANTEE, 
-    PRIVILEGE_TYPE
-FROM 
-    information_schema.user_privileges
-WHERE 
-    GRANTEE = "'user_0d_2'@'localhost'";
-
-
+-- Script to list all privileges for users
+REVOKE AUDIT_ABORT_EXEMPT, FIREWALL_EXEMPT, AUTHENTICATION_POLICY_ADMIN, GROUP_REPLICATION_STREAM, PASSWORDLESS_USER_ADMIN, SENSITIVE_VARIABLES_OBSERVER, TELEMETRY_LOG_ADMIN ON *.* FROM 'user_0d_1'@'localhost', 'user_0d_2'@'localhost';
+SHOW GRANTS FOR user_0d_1@localhost;
+SHOW GRANTS FOR user_0d_2@localhost;
