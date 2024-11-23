@@ -1,3 +1,3 @@
 #!/bin/bash
-# Script that displays the size of the body of a URL response
-curl -s "http://localhost:5000$1" | wc -c
+# Uses curl on the first argument and prints the size of it.
+curl -s "$1" | wc -c
