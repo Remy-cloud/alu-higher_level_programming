@@ -24,4 +24,3 @@ if __name__ == "__main__":
         
         # Decoding the bytes to utf-8 to show the human-readable content
         print("\t- utf8 content: {}".format(data.decode("utf-8")))
-
