@@ -4,7 +4,7 @@ if (process.argv[2] === undefined) {
 } else {
   console.log(process.argv[2]);
 }
-/*#!/usr/bin/node
+/* #!/usr/bin/node
 if (process.argv[2]) {
   console.log('process.argv[2]');
 } else {
